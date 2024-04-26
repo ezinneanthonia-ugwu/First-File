@@ -1,0 +1,23 @@
+# Function to calculate the average of n numbers
+def calculate_average(numbers):
+    sum = 0
+    count = 0
+
+    # Iterate over the list of numbers
+    for number in numbers:
+        # Add the number to the sum
+        sum += number
+        # Increment the count of numbers
+        count += 1
+
+    # Calculate the average
+    average = sum / count
+
+    # Return the average
+    return average
+
+
+# Driver code
+numbers = [1, 2, 3, 4, 5]
+average = calculate_average(numbers)
+print("The average of the numbers is:", average)
